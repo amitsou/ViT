@@ -1,0 +1,15 @@
+model:
+  PATCH_SIZE: 16          # The size of the patches extracted from the input images
+  LATENT_SIZE: 768        # The size of the latent space representation of the patches (after the linear projection)
+  N_CHANNELS: 3           # The number of channels in the input images (3 for RGB images)
+  N_HEADS: 12             # The number of attention heads in the Multi-Head Attention layers
+  N_ENCODER_LAYERS: 12    # The number of encoder layers in the model (each layer contains a Multi-Head Attention and a Feed-Forward layer)
+  DROPOUT: 0.1            # The dropout rate
+  N_CLASSES: 10           # The number of classes in the dataset
+  SIZE: 224               # The size of the input images (in pixels)
+
+training:
+  EPOCHS: 10              # The number of training epochs
+  BASE_LR: 0.01           # The base learning rate
+  WEIGHT_DECAY: 0.03      # The weight decay rate
+  BATCH_SIZE: 64          # The batch size for training
